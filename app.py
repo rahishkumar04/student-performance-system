@@ -45,9 +45,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<p class="title">AI Student Performance System</p>', unsafe_allow_html=True)
+import os
 
-#  Firebase API KEY
-
+# Firebase API KEY
 API_KEY = os.getenv("FIREBASE_API_KEY")
 
 if not API_KEY:
