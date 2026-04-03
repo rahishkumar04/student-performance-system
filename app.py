@@ -47,7 +47,10 @@ st.markdown('<p class="title">AI Student Performance System</p>', unsafe_allow_h
 
 #  Firebase API KEY
 
-API_KEY = "AIzaSyAYyyHzM6ji3lVCNzcTVYisT8ov4O-9ug4"
+API_KEY = os.getenv("FIREBASE_API_KEY")
+
+if not API_KEY:
+    raise ValueError("API Key not found! Set FIREBASE_API_KEY")
 
 #  Firebase Auth
 
