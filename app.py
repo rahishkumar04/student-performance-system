@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import requests
+import os
 from sklearn.linear_model import LinearRegression
 import time
 from streamlit_lottie import st_lottie
